@@ -2,8 +2,17 @@
 
 A web-app based debugger for HumanLoop
 
+## Discussion
 
-## Installation
+I would be hard-pressed to call this a debugger tool. It ended up being more of a visualisation dashboard. Partly because of the time spent on finangling Plotly's Dash to work as I wanted it to. 
+
+I think if time permitted and the prediction API was working there might have been some interesting stuff that could have been done, as well some low hanging fruit like classification confusion matrices etc. 
+
+I also believe the language model used is BERT based, so something like t-SNE clustering on the sentence embeddings from the BERT model might have made for one very interesting visualisation. (Allowing one to identify clusters of data points where classification intent was different but the latent representations were strongly overlapped or have high cosine similarity). A quick google tells me there is a way of computing fixed length sentence embeddings from BERT (and adjacent) models. [Link](https://arxiv.org/pdf/1908.10084.pdf)
+
+**N.b. this web app is based off a Plotly Dash and the CookieCutter template SlapDash. The following instructions are taken almost verbatim from CC SlapDash and should allow you to install and use the web app relatively easily.**
+
+### Installation
 
 After cloning/downloading the repository, simply install HumanLoop-Debugger as a package into your target virtual environment:
 
@@ -15,7 +24,7 @@ changes to the source code take immediate effect on the installed package.
     $ pip install -e PATH_TO_humanloop_debugger
 
 
-## Running Your App
+### Running Your App
 
 This project comes with two convenience scripts for running your project in
 development and production environments, or you can use your own WSGI server to
