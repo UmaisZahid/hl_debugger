@@ -12,8 +12,6 @@ from .components import fa
 urls = (
     ("", debugger.get_layout),
     ("debugger", debugger.get_layout),
-    # ("page2", page2.layout),
-    # ("page3", page3.layout),
 )
 
 # Ordered iterable of navbar items: tuples of `(route, display)`, where `route`
@@ -22,8 +20,6 @@ urls = (
 # keyword argument for a Dash component (ie a Dash Component or a string).
 nav_items = (
     ("debugger", html.Div([fa("fas fa-keyboard"), "Debugger"])),
-    # ("page2", html.Div([fa("fas fa-chart-area"), "Page 2"])),
-    # ("page3", html.Div([fa("fas fa-chart-line"), "Page 3"])),
 )
 
 router = DashRouter(app, urls)

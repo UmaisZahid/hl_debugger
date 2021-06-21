@@ -64,7 +64,7 @@ setup(
     package_dir={"": "src"},
     package_data={
         "": [
-            "data/*.json"
+            "data/*",
             "assets/favicon.ico",
             "assets/*.css",
             "assets/*.js",
