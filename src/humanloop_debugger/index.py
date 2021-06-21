@@ -2,7 +2,7 @@ import dash_html_components as html
 
 from .app import app
 from .utils import DashRouter, DashNavBar
-from .pages import debugger, page2, page3
+from .pages import debugger
 from .components import fa
 
 

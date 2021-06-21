@@ -17,7 +17,7 @@ VERSION = None  # get this from __version__.py
 
 
 # What packages are required for this module to be executed?
-REQUIRED = ["dash>=0.40.0", "dash-bootstrap-components>=0.3.0", "click"]
+REQUIRED = ["dash>=0.40.0", "dash-bootstrap-components>=0.3.0", "click", "pandas"]
 
 # What packages are optional?
 EXTRAS = {"prod": ["mod_wsgi"]}
